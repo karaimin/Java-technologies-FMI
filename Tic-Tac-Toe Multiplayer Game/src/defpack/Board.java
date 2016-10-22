@@ -87,6 +87,10 @@ public class Board {
     }
 
     public boolean canAdd(char symbol, int boardNumber){
+
+        if(boardNumber < 1 || boardNumber > 9){
+            return false;
+        }
         int yPos = boardNumber / rows;
         int xPos = boardNumber % rows;
 

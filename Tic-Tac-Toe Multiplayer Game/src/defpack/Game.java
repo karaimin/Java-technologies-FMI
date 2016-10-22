@@ -39,6 +39,7 @@ public class Game {
             stepPlayer(this.player1);
             if(this.player1.isWin()){
                 printWinner(this.player1);
+                break;
             }
             this.gameBoard.print();
             if(this.gameBoard.isFilled()){
